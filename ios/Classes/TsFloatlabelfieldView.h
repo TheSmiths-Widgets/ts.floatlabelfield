@@ -10,6 +10,8 @@
     float floatLabelFontSize;
     NSString *placeholderTextColor; // to be converted
     NSString *floatLabelTextColor; // to be converted
+    
+    NSNumber *debug;
 }
 
 -(void)updatePlaceholder;

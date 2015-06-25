@@ -69,6 +69,7 @@ You can pass properties during initialization or later:
 | floatingLabelFontSize  | int    | Size of the floating label above field |
 | floatingLabelTextColor | String | Color of the floating label above field |
 | value   				 | String | Value of the field (user input) |
+| debug   				 | Bool   | Switch module logging on with `debug: true` |
 
 
 ## Public methods

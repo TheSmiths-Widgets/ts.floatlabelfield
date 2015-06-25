@@ -21,7 +21,7 @@
 
 -(void)updatePlaceholder
 {
-    NSLog(@"updatePlaceholder: %@, %f", placeholderText, placeholderFontSize);
+    if(debug) NSLog(@"[FLF] updatePlaceholder: %@, %f", placeholderText, placeholderFontSize);
     NSString *_placeholderText = placeholderText.length>0 ? placeholderText : @"";
     UIColor *_placeholderColor = [[TiUtils colorValue:placeholderTextColor] _color];
     if(!_placeholderColor) {
@@ -34,7 +34,7 @@
 
 -(void)updateIntrinsicView
 {
-    NSLog(@"updateIntrinsicView");
+    if(debug) NSLog(@"[FLF] updateIntrinsicView");
     CGSize size = [[self FLTF] intrinsicContentSize];
     [fltf setFrame:CGRectMake(fltf.frame.origin.x, fltf.frame.origin.y, size.width, size.height)];
     [fltf setBounds:CGRectMake(0, 0, size.width, size.height)];
@@ -44,7 +44,7 @@
 
 -(void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
-    NSLog(@"frameSizeChanged frame %@ : %@ ", NSStringFromCGRect(frame), NSStringFromCGRect(fltf.frame));
+    if(debug) NSLog(@"[FLF] frameSizeChanged frame %@ : %@ ", NSStringFromCGRect(frame), NSStringFromCGRect(fltf.frame));
     // If using Ti.UI.SIZE, frameSizeChanged is called with size (0,0)
     if(bounds.size.height == 0 && bounds.size.width == 0) {
         return [self updateIntrinsicView];
@@ -72,12 +72,12 @@
 
 -(void)setValue:(id)text
 {
-    NSLog(@"[FLF] setValue %@", text);
+    if(debug) NSLog(@"[FLF] setValue %@", text);
     [self FLTF].text = text;
 }
 -(id)getValue
 {
-    NSLog(@"[FLF] getValue");
+    if(debug) NSLog(@"[FLF] getValue");
     return [self FLTF].text;
 }
 
@@ -89,14 +89,14 @@
 
 -(void)setFontSize_:(id)size
 {
-    NSLog(@"[FLF] setFontSize_");
+    if(debug) NSLog(@"[FLF] setFontSize_");
     [self FLTF].font = [UIFont systemFontOfSize:[TiUtils floatValue:size def:20]];
 }
 
 -(void)setTextColor_:(id)color
 {
     ENSURE_SINGLE_ARG(color, NSString);
-    NSLog(@"[FLF] setTextColor %@", color);
+    if(debug) NSLog(@"[FLF] setTextColor %@", color);
     
     [self FLTF].tintColor = [[TiUtils colorValue:color] _color];
     [self FLTF].textColor = [[TiUtils colorValue:color] _color];
@@ -105,7 +105,7 @@
 -(void)setPlaceholderText_:(id)text
 {
     ENSURE_SINGLE_ARG(text, NSString);
-    NSLog(@"[FLF] setPlaceholderText %@", text);
+    if(debug) NSLog(@"[FLF] setPlaceholderText %@", text);
     
     placeholderText = text;
     [self updatePlaceholder];
@@ -114,7 +114,7 @@
 -(void)setPlaceholderTextColor_:(id)color
 {
     ENSURE_SINGLE_ARG(color, NSString);
-    NSLog(@"[FLF] setPlaceholderTextColor %@", color);
+    if(debug) NSLog(@"[FLF] setPlaceholderTextColor %@", color);
 
     placeholderTextColor = color;
     [self updatePlaceholder];
@@ -122,17 +122,22 @@
 
 -(void)setFloatingLabelFontSize_:(id)size
 {
-    NSLog(@"[FLF] setFloatingLabelFontSize_");
+    if(debug) NSLog(@"[FLF] setFloatingLabelFontSize_");
     [self FLTF].floatingLabelFont = [UIFont boldSystemFontOfSize:[TiUtils floatValue:size def:10]];
 }
 
 -(void)setFloatingLabelTextColor_:(id)color
 {
-    NSLog(@"[FLF] setFloatingLabelTextColor_");
+    if(debug) NSLog(@"[FLF] setFloatingLabelTextColor_");
     ENSURE_SINGLE_ARG(color, NSString);
     // Use the TiUtils methods to get the values from the arguments
     [self FLTF].floatingLabelTextColor = [[TiUtils colorValue:color] _color];
     [self FLTF].floatingLabelActiveTextColor = [[TiUtils colorValue:color] _color];
+}
+
+-(void)setDebug_:(id)yesno
+{
+    debug = [TiUtils boolValue:yesno];
 }
 
 @end
