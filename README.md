@@ -1,18 +1,17 @@
 
 # Float label field [![Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://www.appcelerator.com/titanium/) [![Alloy](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/)
 
-This module for [Appcelerator](http://www.appcelerator.com) Titanium wraps [https://github.com/jverdi/JVFloatLabeledTextField](JVFloatLabeledTextField) for **iOS** (TODO: Android).
+This module for [Appcelerator](http://www.appcelerator.com) Titanium wraps [JVFloatLabeledTextField](https://github.com/jverdi/JVFloatLabeledTextField) for **iOS** (TODO: Android).
 
 ## Preview
 Credits for the concept to Matt D. Smith ([@mds](http://www.twitter.com/mds)), and his [original design](http://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction?list=users):
 
 ![Matt D. Smith's Design](http://dribbble.s3.amazonaws.com/users/6410/screenshots/1254439/form-animation-_gif_.gif)
-
-Credits for the iOS implementation to [https://github.com/jverdi](Jverdi).
+Credits for the iOS implementation to [@jverdi](https://github.com/jverdi).
 
 ## Quick Start
 
-### Get it [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/[YOUR PROJECT ID])
+### Get it [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/ts.floatlabelfield)
 Download this repository or one release and install it:
 
 * In your application's tiapp.xml file, include the following line in your `<modules>` tag:
@@ -28,7 +27,6 @@ Download this repository or one release and install it:
 
 * Require the module in a view:
 
-**file1.xml**
 ```xml
 <Module module="ts.floatlabelfield" id="floatField" />
 ```
@@ -41,7 +39,7 @@ var floatlabelfield = require('ts.floatlabelfield').createView({ _[PARAMS]_ );
 ```
 
 **Example:**
-```
+```javascript
 var win = Ti.UI.createWindow({ backgroundColor:'#fff' });
 var floatlabelfield = require('ts.floatlabelfield').createView({
     height: Ti.UI.SIZE,
@@ -70,6 +68,7 @@ You can pass properties during initialization or later:
 | placeholderText 		 | String | Placeholder text value |
 | floatingLabelFontSize  | int    | Size of the floating label above field |
 | floatingLabelTextColor | String | Color of the floating label above field |
+| value   				 | String | Value of the field (user input) |
 
 
 ## Public methods
@@ -83,6 +82,7 @@ Here is a list of all accessible methods and the associated expected behaviour:
 | setPlaceholderText 		| Set placeholderText property 		  |
 | setFloatingLabelFontSize  | Set floatingLabelFontSize property  |
 | setFloatingLabelTextColor | Set floatingLabelTextColor property |
+| setValue 					| Set field's value |
 
 | Method         | Description               |
 | -------------  | ------------------------- |
@@ -116,12 +116,6 @@ Here is a list of all supported events and the associated expected behaviour:
 | ------------- | ------------------------- |
 | change 		| Triggers when user changes field's value. Contains `value`. |
 
-
-## Customization
-* How to apply custom styles to the project?
-* What kind of custom models are supported (provide structure)?
-* Which public properties can be accessed (provide list)?
-
 ******************************************
 
 ## TODO / Ideas for improvement
@@ -135,7 +129,7 @@ Here are my ideas:
 * 1.0 First version
 
 ## Dependencies
-* [https://github.com/jverdi/JVFloatLabeledTextField](JVFloatLabeledTextField)
+* [JVFloatLabeledTextField](https://github.com/jverdi/JVFloatLabeledTextField)
 
 ## Licences
 JVFloatLabeledTextField is licensed under the [MIT license](https://github.com/jverdi/JVFloatLabeledTextField/blob/master/LICENSE).
