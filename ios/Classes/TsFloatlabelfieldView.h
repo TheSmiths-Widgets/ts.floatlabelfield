@@ -13,5 +13,7 @@
 }
 
 -(void)updatePlaceholder;
+-(void)setValue:(id)text;
+-(id)getValue;
 
 @end

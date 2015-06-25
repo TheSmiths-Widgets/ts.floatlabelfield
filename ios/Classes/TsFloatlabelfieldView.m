@@ -70,23 +70,33 @@
 
 #pragma mark Public API
 
--(void)setText_:(id)text
+-(void)setValue:(id)text
+{
+    NSLog(@"[FLF] setValue %@", text);
+    [self FLTF].text = text;
+}
+-(id)getValue
+{
+    NSLog(@"[FLF] getValue");
+    return [self FLTF].text;
+}
+
+-(void)setValue_:(id)text
 {
     ENSURE_SINGLE_ARG(text, NSString);
-    NSLog(@"[VIEW LIFECYCLE EVENT] setText %@", text);
-    [self FLTF].text = text;
+    [self setValue:text];
 }
 
 -(void)setFontSize_:(id)size
 {
-    NSLog(@"[VIEW LIFECYCLE EVENT] setFontSize_");
+    NSLog(@"[FLF] setFontSize_");
     [self FLTF].font = [UIFont systemFontOfSize:[TiUtils floatValue:size def:20]];
 }
 
 -(void)setTextColor_:(id)color
 {
     ENSURE_SINGLE_ARG(color, NSString);
-    NSLog(@"[VIEW LIFECYCLE EVENT] setTextColor %@", color);
+    NSLog(@"[FLF] setTextColor %@", color);
     
     [self FLTF].tintColor = [[TiUtils colorValue:color] _color];
     [self FLTF].textColor = [[TiUtils colorValue:color] _color];
@@ -95,7 +105,7 @@
 -(void)setPlaceholderText_:(id)text
 {
     ENSURE_SINGLE_ARG(text, NSString);
-    NSLog(@"[VIEW LIFECYCLE EVENT] setPlaceholderText %@", text);
+    NSLog(@"[FLF] setPlaceholderText %@", text);
     
     placeholderText = text;
     [self updatePlaceholder];
@@ -104,7 +114,7 @@
 -(void)setPlaceholderTextColor_:(id)color
 {
     ENSURE_SINGLE_ARG(color, NSString);
-    NSLog(@"[VIEW LIFECYCLE EVENT] setPlaceholderTextColor %@", color);
+    NSLog(@"[FLF] setPlaceholderTextColor %@", color);
 
     placeholderTextColor = color;
     [self updatePlaceholder];
@@ -112,13 +122,13 @@
 
 -(void)setFloatingLabelFontSize_:(id)size
 {
-    NSLog(@"[VIEW LIFECYCLE EVENT] setFloatingLabelFontSize_");
+    NSLog(@"[FLF] setFloatingLabelFontSize_");
     [self FLTF].floatingLabelFont = [UIFont boldSystemFontOfSize:[TiUtils floatValue:size def:10]];
 }
 
 -(void)setFloatingLabelTextColor_:(id)color
 {
-    NSLog(@"[VIEW LIFECYCLE EVENT] setFloatingLabelTextColor_");
+    NSLog(@"[FLF] setFloatingLabelTextColor_");
     ENSURE_SINGLE_ARG(color, NSString);
     // Use the TiUtils methods to get the values from the arguments
     [self FLTF].floatingLabelTextColor = [[TiUtils colorValue:color] _color];

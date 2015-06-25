@@ -2,5 +2,6 @@
 
 @interface TsFloatlabelfieldViewProxy: TiViewProxy
 {
+    NSString *value;
 }
 @end

@@ -10,4 +10,15 @@
 }
 
 
+-(void)setValue:(id)text
+{
+    ENSURE_STRING(text);
+    [(TsFloatlabelfieldView*)[self view] performSelectorOnMainThread:@selector(setValue:)
+                                                          withObject:text waitUntilDone:NO];
+}
+-(NSString *)value
+{
+    return [(TsFloatlabelfieldView*)[self view] getValue];
+}
+
 @end
