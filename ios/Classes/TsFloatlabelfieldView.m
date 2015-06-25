@@ -1,5 +1,6 @@
 
 #import "TsFloatlabelfieldView.h"
+#import "TsFloatlabelfieldViewProxy.h"
 
 @implementation TsFloatlabelfieldView
 
@@ -11,6 +12,9 @@
         fltf.keepBaseline = 1;
         [self addSubview:fltf];
         [self bringSubviewToFront:fltf];
+        WARN_IF_BACKGROUND_THREAD_OBJ;	//NSNotificationCenter is not threadsafe!
+        NSNotificationCenter * theNC = [NSNotificationCenter defaultCenter];
+        [theNC addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:fltf];
     }
     return fltf;
 }
@@ -49,10 +53,17 @@
     [super frameSizeChanged:frame bounds:bounds];
 }
 
+- (void)textFieldDidChange:(NSNotification *)notification
+{
+    [[self proxy] fireEvent:@"change" withObject:[NSDictionary dictionaryWithObject:[(UITextField *)fltf text] forKey:@"value"]];
+}
+
 - (void) dealloc
 {
     fltf.delegate = nil;
     RELEASE_TO_NIL(fltf);
+    WARN_IF_BACKGROUND_THREAD_OBJ;	//NSNotificationCenter is not threadsafe!
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:nil];
     [super dealloc];
 }
 

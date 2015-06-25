@@ -35,4 +35,8 @@ dependencies: \
   /Users/pierre/Library/Application\ Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone/include/LayoutConstraint.h \
   /Users/pierre/Library/Application\ Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone/include/TiGradient.h \
   /Users/pierre/TheSmiths/ts.floatlabelfield/ios/JVFloatLabeledTextField/JVFloatLabeledTextField.h \
-  /Users/pierre/TheSmiths/ts.floatlabelfield/ios/JVFloatLabeledTextField/JVFloatLabeledTextView.h
+  /Users/pierre/TheSmiths/ts.floatlabelfield/ios/JVFloatLabeledTextField/JVFloatLabeledTextView.h \
+  /Users/pierre/TheSmiths/ts.floatlabelfield/ios/Classes/TsFloatlabelfieldViewProxy.h \
+  /Users/pierre/Library/Application\ Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone/include/TiViewProxy.h \
+  /Users/pierre/Library/Application\ Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone/include/TiRect.h \
+  /Users/pierre/Library/Application\ Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone/include/TiViewTemplate.h
