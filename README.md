@@ -150,7 +150,6 @@ Here is a list of all supported events and the associated expected behaviour:
 Feel free to improve this widget by forking, submitting pull requests or creating issues.  
 Here are my ideas:
 
-* Add support for JVFloatLabeledTextView
 * Wrap an Android implementation
 
 ## Changelog
