@@ -26,16 +26,20 @@
 		24DD6CFA1134B3F500162E58 /* TsFloatlabelfieldModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TsFloatlabelfieldModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.m */; };
-		8F57A1021B3C0D65003626C7 /* TsFloatlabelfieldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F57A0FE1B3C0D65003626C7 /* TsFloatlabelfieldView.h */; };
-		8F57A1031B3C0D65003626C7 /* TsFloatlabelfieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A0FF1B3C0D65003626C7 /* TsFloatlabelfieldView.m */; };
-		8F57A1041B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F57A1001B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.h */; };
-		8F57A1051B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A1011B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.m */; };
+		8F57A1021B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F57A0FE1B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.h */; };
+		8F57A1031B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A0FF1B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.m */; };
+		8F57A1041B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F57A1001B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.h */; };
+		8F57A1051B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A1011B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.m */; };
 		8F57A10D1B3C0DA7003626C7 /* JVFloatLabeledTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F57A1071B3C0DA7003626C7 /* JVFloatLabeledTextField.h */; };
 		8F57A10E1B3C0DA7003626C7 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A1081B3C0DA7003626C7 /* JVFloatLabeledTextField.m */; };
 		8F57A10F1B3C0DA7003626C7 /* JVFloatLabeledTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F57A1091B3C0DA7003626C7 /* JVFloatLabeledTextView.h */; };
 		8F57A1101B3C0DA7003626C7 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A10A1B3C0DA7003626C7 /* JVFloatLabeledTextView.m */; };
 		8F57A1111B3C0DA7003626C7 /* NSString+TextDirectionality.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F57A10B1B3C0DA7003626C7 /* NSString+TextDirectionality.h */; };
 		8F57A1121B3C0DA7003626C7 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A10C1B3C0DA7003626C7 /* NSString+TextDirectionality.m */; };
+		8FF694D01B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF694CC1B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.h */; };
+		8FF694D11B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF694CD1B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.m */; };
+		8FF694D21B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF694CE1B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.h */; };
+		8FF694D31B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF694CF1B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.m */; };
 		AA747D9F0F9514B9006C5449 /* TsFloatlabelfield_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TsFloatlabelfield_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -56,16 +60,20 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TsFloatlabelfieldModuleAssets.h; path = Classes/TsFloatlabelfieldModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TsFloatlabelfieldModuleAssets.m; path = Classes/TsFloatlabelfieldModuleAssets.m; sourceTree = "<group>"; };
-		8F57A0FE1B3C0D65003626C7 /* TsFloatlabelfieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TsFloatlabelfieldView.h; path = Classes/TsFloatlabelfieldView.h; sourceTree = "<group>"; };
-		8F57A0FF1B3C0D65003626C7 /* TsFloatlabelfieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TsFloatlabelfieldView.m; path = Classes/TsFloatlabelfieldView.m; sourceTree = "<group>"; };
-		8F57A1001B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TsFloatlabelfieldViewProxy.h; path = Classes/TsFloatlabelfieldViewProxy.h; sourceTree = "<group>"; };
-		8F57A1011B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TsFloatlabelfieldViewProxy.m; path = Classes/TsFloatlabelfieldViewProxy.m; sourceTree = "<group>"; };
+		8F57A0FE1B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TsFloatlabelfieldTextFieldView.h; path = Classes/TsFloatlabelfieldTextFieldView.h; sourceTree = "<group>"; };
+		8F57A0FF1B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TsFloatlabelfieldTextFieldView.m; path = Classes/TsFloatlabelfieldTextFieldView.m; sourceTree = "<group>"; };
+		8F57A1001B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TsFloatlabelfieldTextFieldViewProxy.h; path = Classes/TsFloatlabelfieldTextFieldViewProxy.h; sourceTree = "<group>"; };
+		8F57A1011B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TsFloatlabelfieldTextFieldViewProxy.m; path = Classes/TsFloatlabelfieldTextFieldViewProxy.m; sourceTree = "<group>"; };
 		8F57A1071B3C0DA7003626C7 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
 		8F57A1081B3C0DA7003626C7 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
 		8F57A1091B3C0DA7003626C7 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
 		8F57A10A1B3C0DA7003626C7 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
 		8F57A10B1B3C0DA7003626C7 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
 		8F57A10C1B3C0DA7003626C7 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		8FF694CC1B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TsFloatlabelfieldTextViewView.h; path = Classes/TsFloatlabelfieldTextViewView.h; sourceTree = "<group>"; };
+		8FF694CD1B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TsFloatlabelfieldTextViewView.m; path = Classes/TsFloatlabelfieldTextViewView.m; sourceTree = "<group>"; };
+		8FF694CE1B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TsFloatlabelfieldTextViewViewProxy.h; path = Classes/TsFloatlabelfieldTextViewViewProxy.h; sourceTree = "<group>"; };
+		8FF694CF1B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TsFloatlabelfieldTextViewViewProxy.m; path = Classes/TsFloatlabelfieldTextViewViewProxy.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TsFloatlabelfield_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TsFloatlabelfield_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libTsFloatlabelfield.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTsFloatlabelfield.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,10 +122,14 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8F57A0FE1B3C0D65003626C7 /* TsFloatlabelfieldView.h */,
-				8F57A0FF1B3C0D65003626C7 /* TsFloatlabelfieldView.m */,
-				8F57A1001B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.h */,
-				8F57A1011B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.m */,
+				8FF694CC1B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.h */,
+				8FF694CD1B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.m */,
+				8FF694CE1B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.h */,
+				8FF694CF1B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.m */,
+				8F57A0FE1B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.h */,
+				8F57A0FF1B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.m */,
+				8F57A1001B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.h */,
+				8F57A1011B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.m */,
 				24DE9E0F11C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* TsFloatlabelfieldModule.h */,
@@ -156,10 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* TsFloatlabelfield_Prefix.pch in Headers */,
-				8F57A1041B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.h in Headers */,
-				8F57A1021B3C0D65003626C7 /* TsFloatlabelfieldView.h in Headers */,
+				8F57A1041B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.h in Headers */,
+				8F57A1021B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.h in Headers */,
 				8F57A10D1B3C0DA7003626C7 /* JVFloatLabeledTextField.h in Headers */,
+				8FF694D01B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.h in Headers */,
 				24DD6CF91134B3F500162E58 /* TsFloatlabelfieldModule.h in Headers */,
+				8FF694D21B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.h in Headers */,
 				8F57A10F1B3C0DA7003626C7 /* JVFloatLabeledTextView.h in Headers */,
 				8F57A1111B3C0DA7003626C7 /* NSString+TextDirectionality.h in Headers */,
@@ -239,9 +253,11 @@
 				8F57A1101B3C0DA7003626C7 /* JVFloatLabeledTextView.m in Sources */,
 				24DD6CFA1134B3F500162E58 /* TsFloatlabelfieldModule.m in Sources */,
 				8F57A1121B3C0DA7003626C7 /* NSString+TextDirectionality.m in Sources */,
-				8F57A1051B3C0D65003626C7 /* TsFloatlabelfieldViewProxy.m in Sources */,
-				8F57A1031B3C0D65003626C7 /* TsFloatlabelfieldView.m in Sources */,
+				8F57A1051B3C0D65003626C7 /* TsFloatlabelfieldTextFieldViewProxy.m in Sources */,
+				8FF694D31B3DFC2700182E2D /* TsFloatlabelfieldTextViewViewProxy.m in Sources */,
+				8F57A1031B3C0D65003626C7 /* TsFloatlabelfieldTextFieldView.m in Sources */,
 				8F57A10E1B3C0DA7003626C7 /* JVFloatLabeledTextField.m in Sources */,
+				8FF694D11B3DFC2700182E2D /* TsFloatlabelfieldTextViewView.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* TsFloatlabelfieldModuleAssets.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

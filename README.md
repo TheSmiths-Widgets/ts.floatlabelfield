@@ -28,30 +28,57 @@ Download this repository or one release and install it:
 * Require the module in a view:
 
 ```xml
-<Module module="ts.floatlabelfield" id="floatField" />
+<!-- TextField -->
+<Module module="ts.floatlabelfield" method="createTextFieldView" id="floatField" />
+<!-- TextView -->
+<Module module="ts.floatlabelfield" method="createTextViewView" id="floatView" />
 ```
 Which create a reference in your controller, accessible via: `$.floadField`
 
 * Or, require it directly in a controller :
 
 ```javascript
-var floatlabelfield = require('ts.floatlabelfield').createView({ _[PARAMS]_ );
+var floatlabelfield = require('ts.floatlabelfield').createTextFieldView({ _[PARAMS]_ );
+var floatlabelview = require('ts.floatlabelfield').createTextFieldView({ _[PARAMS]_ );
 ```
 
 **Example:**
 ```javascript
-var win = Ti.UI.createWindow({ backgroundColor:'#fff' });
-var floatlabelfield = require('ts.floatlabelfield').createView({
+var flf = require('ts.floatlabelfield');
+
+// open a single window
+var win = Ti.UI.createWindow({
+    backgroundColor:'white',
+    layout: 'vertical'
+});
+
+var floatlabelfield = flf.createTextFieldView({
     height: Ti.UI.SIZE,
     width: Ti.UI.SIZE,
+    top: 150,
     fontSize: '18dp',
+    textColor: '#2c3e50',
+    placeholderTextColor: '#8d8d8d',
+    placeholderText: "short description",
+    floatingLabelFontSize: '12dp',
+    floatingLabelTextColor: "#2980b9",
+    debug: false
+});
+win.add(floatlabelfield);
+
+var floatlabelview = flf.createTextViewView({
+    height: 150,
+    width: 150,
+    top: 50,
+    fontSize: '10dp',
     textColor: '#2c3e50',
     placeholderTextColor: '#bdc3c7',
     placeholderText: "short description",
-    floatingLabelFontSize: '20dp',
-    floatingLabelTextColor: "#2980b9"
+    floatingLabelFontSize: '7dp',
+    floatingLabelTextColor: "#2980b9",
+    debug: false
 });
-win.add(floatlabelfield);
+win.add(floatlabelview);
 win.open();
 ```
 
@@ -94,7 +121,7 @@ You can listen for events by simply adding an event listener:
 
 * In an Alloy view:
 ```xml
-<Module module="ts.floatlabelfield" id="floatField" onChange="onFieldChange" />
+<Module module="ts.floatlabelfield" method="createTextFieldView" id="floatField" onChange="onFieldChange" />
 ```
 
 * In an Alloy controller:

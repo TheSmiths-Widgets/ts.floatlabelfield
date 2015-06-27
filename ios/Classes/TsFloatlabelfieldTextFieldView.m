@@ -1,8 +1,8 @@
 
-#import "TsFloatlabelfieldView.h"
-#import "TsFloatlabelfieldViewProxy.h"
+#import "TsFloatlabelfieldTextFieldView.h"
+#import "TsFloatlabelfieldTextFieldViewProxy.h"
 
-@implementation TsFloatlabelfieldView
+@implementation TsFloatlabelfieldTextFieldView
 
 -(JVFloatLabeledTextField*)FLTF
 {

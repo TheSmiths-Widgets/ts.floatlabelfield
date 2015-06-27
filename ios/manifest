@@ -2,13 +2,13 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 1.1
 apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: ts.floatlabelfield
-author: Your Name
+author: Pierre VdeV
 license: Specify your license
-copyright: Copyright (c) 2015 by Your Company
+copyright: Copyright (c) 2015 by TheSmiths
 
 # these should not be edited
 name: ts.floatlabelfield

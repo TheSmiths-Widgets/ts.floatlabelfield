@@ -1,8 +1,7 @@
 #import "TiUIView.h"
 #import "JVFloatLabeledTextField.h"
-#import "JVFloatLabeledTextView.h"
 
-@interface TsFloatlabelfieldView : TiUIView<UITextFieldDelegate>
+@interface TsFloatlabelfieldTextFieldView : TiUIView<UITextFieldDelegate>
 {
     JVFloatLabeledTextField *fltf;
     NSString *placeholderText;
