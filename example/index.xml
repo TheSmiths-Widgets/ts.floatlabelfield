@@ -1,0 +1,31 @@
+<Alloy>
+    <Window class="container">
+        <View class="wrap top">
+            <Module module="ts.floatlabelfield" method="createTextFieldView"
+                    id="titleField"
+                    class="floatField"
+                    onChange="onFieldChange" />
+        </View>
+        <View class="h-sep-wrap" />
+        <View class="wrap mid">
+            <Module module="ts.floatlabelfield" method="createTextFieldView"
+                    id="priceField"
+                    class="floatField"
+                    onChange="onFieldChange" />
+
+            <View class="v-sep-wrap" />
+
+            <Module module="ts.floatlabelfield" method="createTextFieldView"
+                    id="geoField"
+                    class="floatField"
+                    onChange="onFieldChange" />
+        </View>
+        <View class="h-sep-wrap" />
+        <View class="wrap bot">
+            <Module module="ts.floatlabelfield" method="createTextViewView"
+                    class="floatView"
+                    id="descView"
+                    onChange="onFieldChange" />
+        </View>
+    </Window>
+</Alloy>

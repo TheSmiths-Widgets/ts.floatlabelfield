@@ -1,0 +1,86 @@
+".container": {
+    backgroundColor:"#fff",
+    layout: 'vertical'
+}
+
+"Label": {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    color: "#000"
+}
+"#label": {
+    font: {
+        fontSize: 12
+    }
+}
+
+".h-sep-wrap": {
+    width: Ti.UI.FILL,
+    height: '1dp',
+    backgroundColor: "#bdc3c7",
+    top: 1, bottom: 1,
+    right: 10, left: 10
+}
+".v-sep-wrap": {
+    height: '40dp',
+    width: '1dp',
+    backgroundColor: "#bdc3c7",
+    top: 5, left: '30%'
+}
+
+".wrap": {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    right: 5, left: 5
+}
+
+".top": {
+    top: 40
+}
+".mid": {
+    width: Ti.UI.FILL,
+    /*layout: 'horizontal'*/
+}
+
+".floatField": {
+    fontSize: '18dp',
+    textColor: '#2c3e50',
+    placeholderTextColor: '#8d8d8d',
+    floatingLabelFontSize: '12dp',
+    floatingLabelTextColor: "#2980b9",
+    debug: false
+}
+
+".floatView": {
+    fontSize: '18dp',
+    textColor: '#2c3e50',
+    placeholderTextColor: '#8d8d8d',
+    floatingLabelFontSize: '12dp',
+    floatingLabelTextColor: "#2980b9",
+    debug: false
+}
+
+"#titleField": {
+    right: 5, left: 5,
+    width: Ti.UI.FILL,
+    height: '50dp',
+    placeholderText: "Title"
+}
+"#priceField": {
+    left: 5,
+    width: '30%',
+    height: '50dp',
+    placeholderText: "Price"
+}
+"#geoField": {
+    right: 5,
+    width: '60%',
+    height: '50dp',
+    placeholderText: "Specific location"
+}
+"#descView": {
+    right: 5, left: 5,
+    height: 150,
+    width: Ti.UI.FILL,
+    placeholderText: "Short description"
+}
