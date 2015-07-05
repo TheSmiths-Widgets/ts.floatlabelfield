@@ -49,7 +49,8 @@
     if(bounds.size.height == 0 && bounds.size.width == 0) {
         return [self updateIntrinsicView];
     }
-    [TiUtils setView:fltf positionRect:[TiUtils centerRect:[fltf frame] inRect:[self bounds]]];
+//    [TiUtils setView:fltf positionRect:[TiUtils centerRect:[fltf frame] inRect:[self bounds]]];
+    [TiUtils setView:fltf positionRect: bounds];
     [super frameSizeChanged:frame bounds:bounds];
 }
 
